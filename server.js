@@ -40,11 +40,11 @@ app.post("/create-order", async (req, res) => {
     purchase_units: [
       {
         amount: {
-          currency_code: "USD",
+          currency_code: "NOK",
           value: total,
           breakdown: {
             item_total: {
-              currency_code: "USD",
+              currency_code: "NOK",
               value: total,
             },
           },
@@ -54,7 +54,7 @@ app.post("/create-order", async (req, res) => {
           return {
             name: storeItem.name,
             unit_amount: {
-              currency_code: "USD",
+              currency_code: "NOK",
               value: storeItem.price,
             },
             quantity: item.quantity,
