@@ -73,3 +73,20 @@ app.post("/create-order", async (req, res) => {
 })
 
 app.listen(3000)
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://www.paypal.com/sdk/js?client-id=AaIjFIqoQSSHBEiWedQKEnqXkpifTnRKzCFRi5hr5XAUP1dZ60M1COOyWRUPRYLKoo89Eu4lIxdVUzdJ&currency=NOK"></script>
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <input type="text" id="textf">
+  <div id="paypal"></div>
+</body>
+</html>
